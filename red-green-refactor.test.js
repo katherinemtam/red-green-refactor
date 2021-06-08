@@ -33,6 +33,6 @@ describe('capitalizeAndPush function', () => {
 
     const filteredArr = capitalizeAndPush(arr);
 
-    expect(filteredArr).toEqual(['Big Hero 6', 'The Chronicles of Narnia']);
+    expect(filteredArr).toEqual(['BIG HERO 6', 'THE CHRONICLES OF NARNIA']);
   });
 });
