@@ -1,4 +1,3 @@
-export const getName = (object) => {
-  const { name } = object;
+export const getName = ({ name }) => {
   return name;
 };
