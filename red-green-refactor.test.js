@@ -1,4 +1,4 @@
-import { getName, copyAndPush, capitalizeAndPush } from './red-green-refactor.js';
+import { getName, copyAndPush, capitalizeAndFilter } from './red-green-refactor.js';
 
 describe('getName function', () => {
   test('returns the name property of an object', () => {
@@ -22,7 +22,7 @@ describe('copyAndPush function', () => {
   });
 });
 
-describe('capitalizeAndPush function', () => {
+describe('capitalizeAndFilter function', () => {
   test('capitalize all strings in an array and filter out any string that starts with the letter F/f', () => {
     const arr = [
       'Big Hero 6', 
@@ -31,7 +31,7 @@ describe('capitalizeAndPush function', () => {
       'Finding Nemo'
     ];
 
-    const filteredArr = capitalizeAndPush(arr);
+    const filteredArr = capitalizeAndFilter(arr);
 
     expect(filteredArr).toEqual(['BIG HERO 6', 'THE CHRONICLES OF NARNIA']);
   });

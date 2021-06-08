@@ -8,7 +8,7 @@ export const copyAndPush = (arr, n) => {
   return [arr, copyArr];
 };
 
-export const capitalizeAndPush = (arr) => {
+export const capitalizeAndFilter = (arr) => {
 
   const newArr = arr
     .map(index => index.toUpperCase())
