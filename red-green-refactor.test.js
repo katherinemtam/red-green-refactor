@@ -1,12 +1,15 @@
 import { getName } from './red-green-refactor.js';
 
-describe('getName function', (object) => {
+describe('getName function', () => {
   test('returns the name property of an object', () => {
     const spot = {
       name: 'spot',
       age: 5,
       weight: '20 lbs'
     };
-    getName(spot);
+
+    const dog = getName(spot);
+    expect(dog).toEqual('spot');
   });
 });
+
