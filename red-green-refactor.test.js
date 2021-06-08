@@ -18,6 +18,6 @@ describe('copyAndPush function', () => {
     const numbers = [1, 2, 3];
     const newArr = copyAndPush(numbers, 4);
 
-    expect(newArr).toEqual([1, 2, 3, 4]);
+    expect(newArr).toEqual([numbers, [1, 2, 3, 4]]);
   });
 });
