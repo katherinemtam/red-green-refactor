@@ -1,4 +1,4 @@
-import { getName } from './red-green-refactor.js';
+import { getName, copyAndPush } from './red-green-refactor.js';
 
 describe('getName function', () => {
   test('returns the name property of an object', () => {
