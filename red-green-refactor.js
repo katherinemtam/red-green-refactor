@@ -10,17 +10,9 @@ export const copyAndPush = (arr, n) => {
 
 export const capitalizeAndPush = (arr) => {
 
-  const newArr = [];
-
-  for(const index in arr) {
-    
-    const capitalizedString = arr[index].toUpperCase();
-    
-    if(capitalizedString[0] !== 'F') {
-      
-      newArr[newArr.length] = capitalizedString;
-    }
-  }
+  const newArr = arr
+    .map(index => index.toUpperCase())
+    .filter(capitalizedString => capitalizedString[0] !== 'F');
 
   return newArr;
 };
