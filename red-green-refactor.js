@@ -7,3 +7,21 @@ export const copyAndPush = (arr, n) => {
   copyArr.push(n);
   return [arr, copyArr];
 };
+
+export const capitalizeAndPush = (arr) => {
+
+  const newArr = [];
+
+  for(const index in arr) {
+    
+    const capitalizedString = arr[index].toUpperCase();
+    
+    if(capitalizedString[0] !== 'F') {
+      
+      newArr[newArr.length] = capitalizedString;
+    }
+  }
+
+  return newArr;
+};
+
