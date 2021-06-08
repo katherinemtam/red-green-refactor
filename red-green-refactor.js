@@ -3,7 +3,7 @@ export const getName = ({ name }) => {
 };
 
 export const copyAndPush = (arr, n) => {
-  const copyArr = arr.slice();
+  const copyArr = [...arr];
   copyArr.push(n);
   return [arr, copyArr];
 };
